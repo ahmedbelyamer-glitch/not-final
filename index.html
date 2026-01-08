@@ -1,0 +1,446 @@
+<!DOCTYPE Html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Lollypopia Is an Online Store Where you can Buy Candy ">
+        <title>LollyPopia</title>
+        <style>
+
+            .bady
+            {   width: 1300px;}
+            .Header {
+                background:#5c0a70 ;
+                color: #fff;
+                text-align:center ;
+                font-size:50px ;
+                padding: 10px;  }
+
+            .main-div-navigator {text-align:center;}
+
+            .sub-main-div-navigator{ display:inline-block; }
+
+            .sub-sub-div-main-navigator
+                {   text-align:center ; 
+                    padding-top: 10px;
+                    font-size:25px ;
+                    background:none;
+                    color: rgb(19, 19, 19);}
+
+            .Navigator
+                {   text-align:center ; 
+                    display:inline-block;
+                    padding-bottom: 10px;
+                    padding-top: 10px;}
+
+            .container { position: relative;}
+
+            .container .wallpaper {
+                width: 1100px; 
+                height: 500px;
+                box-shadow: 10px 10px 10px rgb(97, 18, 91);
+                margin:30px auto ;
+                overflow: hidden;  }
+            
+            .container .wallpaper-holder{
+                display: grid;
+                grid-template-columns: repeat(11,100%); 
+                width: 100%; height: 100%;
+                animation: slider 50s ease-in-out infinite alternate;}
+
+            .container #slider-img-1 { background-image: url(2026.jpg);   background-position: center;}
+            .container #slider-img-2 { background-image: url(1.jpg);      background-position: center;}
+            .container #slider-img-3 { background-image: url(2.jpg);      background-position: center;}
+            .container #slider-img-4 { background-image: url(3.jpg);      background-position: center;}
+
+            .container #slider-img-5 { background-image: url(4.jpg);      background-position: center;}
+            .container #slider-img-6 { background-image: url(5.jpg);      background-position: center;}
+            .container #slider-img-7 { background-image: url(6.jpg);      background-position: center;}
+            .container #slider-img-8 { background-image: url(7.jpg);      background-position: center;}
+
+            .container #slider-img-9 { background-image: url(8.jpg);      background-position: center;}
+            .container #slider-img-10 { background-image: url(9.jpg);     background-position: center;}
+            .container #slider-img-11 { background-image: url(10.jpg);    background-position: center;}
+    
+            @keyframes slider{
+                0%{ transform: translateX(0%);}
+                10%{ transform: translateX(-100%);}
+                20%{ transform: translateX(-200%);}
+                30%{ transform: translateX(-300%);}
+                40%{ transform: translateX(-400%);}
+                50%{ transform: translateX(-500%);}
+                60%{ transform: translateX(-600%);}
+                70%{ transform: translateX(-700%);}
+                80%{ transform: translateX(-800%);}
+                90%{ transform: translateX(-900%);}
+                100%{ transform: translateX(-1000%);}
+            }
+
+            ul {list-style:none; padding: 0; margin: 0;}
+
+            ul li { padding-bottom:0px; padding-right: 50px; padding-left: 50px;}
+
+            .sub-part
+                {   padding-top: 30px;
+                    padding-bottom: 5px;;
+                    border: 1px solid #d0caca ;
+                    border-radius:50px;}
+            .section
+                {   text-align:center ;   
+                    padding: 20px;
+                    padding-bottom: 0px;
+                    padding-top: 10px; }
+
+            .part 
+                {   display:inline-block;
+                    text-align:center ;   
+                    padding: 20px;
+                    padding-bottom: 0px;
+                    padding-top: 20px; }
+            .section-Trend
+                {   background:rgba(232, 63, 120, 0.781) ;
+                    color: #fff;
+                    text-align:center ;
+                    font-size:50px ;
+                    border-radius:50px;
+                    margin: 20px;
+                    padding: 20px;
+                    padding-bottom: 35px;
+                    padding-top: 25px;}
+            .section-Feedback
+                {   background:rgba(232, 63, 120, 0.781);
+                    color: #fff;
+                    text-align:center ;
+                    font-size:50px ;
+                    border-radius:50px;
+                    margin: 20px;
+                    padding: 20px;}
+
+            .footer {
+                background:#5c0a70 ;
+                color:#fff ;
+                text-align:center;
+                border-radius:50px;
+                padding:15px ; 
+                margin: 20px;}
+
+            .item{ padding-bottom:0px; padding-top: 20px; font-size: 21px;}
+            .item1{ padding-bottom:20px; padding-top: 20px; font-size: 18px;}
+
+            hr {border:1px solid #d0caca }
+
+            .button
+                {   --glow-color: rgb(194, 142, 243);
+                    --glows-spread-color: rgba(191,123,255,0.781);
+                    --enhanced-glow-color: rgb(231,206,255);
+                    --btn-color:rgb(100,61,136);
+                    border: 3px solid var(--glow-color);
+                    margin-top: 0px;
+                    padding:1em 3em;
+                    color:var(--glow-color);
+                    font-size:15px;
+                    font-weight:bold;
+                    background-color:var(--btn-color);
+                    border-radius:1em;
+                    outline: none;
+                    box-shadow :0 0 1em 0.25em var(--glow-color),
+                                0 0 4em 1em var(--glow-spread-color),
+                                inset 0 0 0.75em 0.25em var(--glow-color);
+                    text-shadow:0 0 0.5em var(--glow-color);
+                    position: relative;
+                    transition: all 0.3s;
+                }
+            button::after 
+                {   pointer-events:none;
+                    content: "";
+                    position: absolute;
+                    top: 120%; 
+                    left:0;
+                    height: 100%;
+                    width:100%;
+                    background-color: var(--glow-spread-color);
+                    filter:blur(2em);
+                    opacity:0.7 ;
+                    transform: perspective(1.5em) rotateX(35deg) scale(1,0.6) ;}
+            button:hover 
+                {   color:var(--btn-color);
+                    background-color:var(--glow-color) ;
+                    box-shadow:0 0 1em 0.25em var(--glow-color),
+                               0 0 4em 2em var(--glow-spread-color),
+                               inset 0 0 0.75em 0.25em var(--glow-color);}
+            button:active 
+                {   box-shadow: 0 0 0.6em 0.25em var(--glow-color),
+                                0 0 2.5em 2em var(--glow-spread-color),
+                                inset 0 0 0.5em 0.25em var(--glow-color)}   
+        </style>
+        <script>alert("Welcome TO Our Online Store LollyPopia");</script>
+    </head>
+    <body class="bady">
+        <div class="Header">
+            Lollypopia
+        </div>
+
+       <div class="main-div-navigator">
+            <div class="sub-main-div-navigator">
+                <ul class="sub-sub-div-main-navigator">
+                    <li class="Navigator"> Home         </li>
+                    <li class="Navigator"> Candy        </li>
+                    <li class="Navigator"> Chocolates   </li>
+                    <li class="Navigator"> Drikns       </li>
+                    <li class="Navigator"> Snacks       </li>
+                    <li class="Navigator"> Offers       </li>
+                    <li class="Navigator"> Boxes       </li>  
+                    <li class="Navigator"> Contact Us   </li>
+                </ul>
+                <hr>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="wallpaper">
+                <div class="wallpaper-holder">
+                    <div id="slider-img-1"></div>
+                    <div id="slider-img-2"></div>
+                    <div id="slider-img-3"></div>
+                    <div id="slider-img-4"></div>
+                    <div id="slider-img-5"></div>
+                    <div id="slider-img-6"></div>
+                    <div id="slider-img-7"></div>
+                    <div id="slider-img-8"></div>
+                    <div id="slider-img-9"></div>
+                    <div id="slider-img-10"></div>
+                    <div id="slider-img-11"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="part">
+                <ul class="sub-part">
+                <li><img src="labubu.png" alt="lollypopia logo" height="550" width="400"></li>
+                <li class="item"> Labubu Collection Available Now</li>
+                <li class="item1"><button class="button">Shop Now</button></li>
+                </ul>
+            </div>
+
+            <div class="part">
+                <ul class="sub-part">
+                <li><img src="swiss fru.jpg" alt="lollypopia logo" height="550 " width="400"></li>
+                <li class="item"> All Swiss FRU Collection Available Now</li>
+                <li class="item1"><button class="button">Shop Now</button></li>
+                </ul>
+            </div>
+
+            <div class="part">
+                <ul class="sub-part">
+                <li><img src="tuya.jpg" alt="lollypopia logo" height="550" width="400"></li>
+                <li class="item"> Tuya New Collection Available Now</li>
+                <li class="item1"><button class="button">Shop Now</button></li>
+            </div>
+
+            <div class="part">
+                <ul class="sub-part">
+                <li><img src="candy.jpg" alt="lollypopia logo" height="550" width="400"></li>
+                <li class="item"> Tuya New Collection Available Now</li>
+                <li class="item1"><button class="button">Shop Now</button></li>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="part">
+                <ul class="sub-part">
+                <li><img src="long-chips.jpg" alt="lollypopia logo" height="550" width="400"></li>
+                <li class="item"> Labubu Collection Available Now</li>
+                <li class="item1"><button class="button">Shop Now</button></li>
+                </ul>
+            </div>
+
+            <div class="part">
+                <ul class="sub-part">
+                <li><img src="Mega-chips.jpg" alt="lollypopia logo" height="550 " width="400"></li>
+                <li class="item"> All Swiss FRU Collection Available Now</li>
+                <li class="item1"><button class="button">Shop Now</button></li>
+                </ul>
+            </div>
+
+            <div class="part">
+                <ul class="sub-part">
+                <li><img src="mogu-mogu.JPG" alt="lollypopia logo" height="550" width="400"></li>
+                <li class="item"> Tuya New Collection Available Now</li>
+                <li class="item1"><button class="button">Shop Now</button></li>
+            </div>
+
+            <div class="part">
+                <ul class="sub-part">
+                <li><img src="boba.jpg" alt="lollypopia logo" height="550" width="400"></li>
+                <li class="item"> Tuya New Collection Available Now</li>
+                <li class="item1"><button class="button">Shop Now</button></li>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="part">
+                <ul class="sub-part">
+                <li><img src="natchito.jpg" alt="lollypopia logo" height="550" width="400"></li>
+                <li class="item"> Mega-Chips Collection Available Now</li>
+                <li class="item1"><button class="button">Shop Now</button></li>
+                </ul>
+            </div>
+
+            <div class="part">
+                <ul class="sub-part">
+                <li><img src="restachio.jpg" alt="lollypopia logo" height="550 " width="400"></li>
+                <li class="item"> New Noodles Collection Available Now</li>
+                <li class="item1"><button class="button">Shop Now</button></li>
+                </ul>
+            </div>
+
+            <div class="part">
+                <ul class="sub-part">
+                <li><img src="t-rolls.jpg" alt="lollypopia logo" height="550" width="400"></li>
+                <li class="item"> long-Chips Collection Available Now</li>
+                <li class="item1"><button class="button">Shop Now</button></li>
+                </ul>
+            </div>
+
+            <div class="part">
+                <ul class="sub-part">
+                <li><img src="t rolls crincle.jpg" alt="lollypopia logo" height="550" width="400"></li>
+                <li class="item"> Tuya New Collection Available Now</li>
+                <li class="item1"><button class="button">Shop Now</button></li>
+            </div>
+        </div>
+
+        
+        <div class="section">
+            <div class="part">
+                <ul class="sub-part">
+                <li><img src="twice.jpg" alt="lollypopia logo" height="550" width="400"></li>
+                <li class="item"> Mega-Chips Collection Available Now</li>
+                <li class="item1"><button class="button">Shop Now</button></li>
+                </ul>
+            </div>
+
+            <div class="part">
+                <ul class="sub-part">
+                <li><img src="trapica.jpg" alt="lollypopia logo" height="550 " width="400"></li>
+                <li class="item"> New Noodles Collection Available Now</li>
+                <li class="item1"><button class="button">Shop Now</button></li>
+                </ul>
+            </div>
+
+            <div class="part">
+                <ul class="sub-part">
+                <li><img src="noodles.jpg" alt="lollypopia logo" height="550" width="400"></li>
+                <li class="item"> long-Chips Collection Available Now</li>
+                <li class="item1"><button class="button">Shop Now</button></li>
+                </ul>
+            </div>
+
+            <div class="part">
+                <ul class="sub-part">
+                <li><img src="marsh.jpg" alt="lollypopia logo" height="550" width="400"></li>
+                <li class="item"> Tuya New Collection Available Now</li>
+                <li class="item1"><button class="button">Shop Now</button></li>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="part">
+                <ul class="sub-part">
+                <li><img src="rolls-ups.jpg" alt="lollypopia logo" height="550" width="400"></li>
+                <li class="item"> Mega-Chips Collection Available Now</li>
+                <li class="item1"><button class="button">Shop Now</button></li>
+                </ul>
+            </div>
+
+            <div class="part">
+                <ul class="sub-part">
+                <li><img src="magic.jpg" alt="lollypopia logo" height="550 " width="400"></li>
+                <li class="item"> New Noodles Collection Available Now</li>
+                <li class="item1"><button class="button">Shop Now</button></li>
+                </ul>
+            </div>
+
+            <div class="part">
+                <ul class="sub-part">
+                <li><img src="stroop.jpg" alt="lollypopia logo" height="550 " width="400"></li>
+                <li class="item"> New Noodles Collection Available Now</li>
+                <li class="item1"><button class="button">Shop Now</button></li>
+                </ul>
+            </div>
+
+            <div class="part">
+                <ul class="sub-part">
+                <li><img src="Wafer Rolls.jpg" alt="lollypopia logo" height="550 " width="400"></li>
+                <li class="item"> New Noodles Collection Available Now</li>
+                <li class="item1"><button class="button">Shop Now</button></li>
+                </ul>
+            </div>
+
+            
+        </div>
+
+        <div class="section-Trend">
+            <h>Trend</h>
+            <br>
+            <div class="part">
+                <ul class="sub-part">
+                <li><img src="candy.jpg" alt="lollypopia logo" height="250" width="200"></li>
+                <li class="item"> Mega-Chips </li>
+                <li class="item"> 35 EGP </li>
+                <li class="item1"><button class="button">Shop Now</button></li>
+                </ul>
+            </div>
+
+            <div class="part">
+                <ul class="sub-part">
+                <li><img src="swiss fru.jpg" alt="lollypopia logo" height="250 " width="200"></li>
+                <li class="item"> New Noodles </li>
+                <li class="item"> 35 EGP </li>
+                <li class="item1"><button class="button">Shop Now</button></li>
+                </ul>
+            </div>
+
+            <div class="part">
+                <ul class="sub-part">
+                <li><img src="t-rolls.jpg" alt="lollypopia logo" height="250" width="200"></li>
+                <li class="item"> long-Chips </li>
+                <li class="item"> 35 EGP </li>
+                <li class="item1"><button class="button">Shop Now</button></li>
+                </ul>
+            </div>
+
+            <div class="part">
+                <ul class="sub-part">
+                <li><img src="noodles.jpg" alt="lollypopia logo" height="250" width="200"></li>
+                <li class="item"> long-Chips </li>
+                <li class="item"> 35 EGP </li>
+                <li class="item1"><button class="button">Shop Now</button></li>
+                </ul>
+            </div>
+
+            <div class="part">
+                <ul class="sub-part">
+                <li><img src="boba.jpg" alt="lollypopia logo" height="250" width="200"></li>
+                <li class="item"> long-Chips </li>
+                <li class="item"> 35 EGP </li>
+                <li class="item1"><button class="button">Shop Now</button></li>
+                </ul>
+            </div>
+
+            <div class="part">
+                <ul class="sub-part">
+                <li><img src="marsh.jpg" alt="lollypopia logo" height="250" width="200"></li>
+                <li class="item"> long-Chips </li>
+                <li class="item"> 35 EGP </li>
+                <li class="item1"><button class="button">Shop Now</button></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer">
+            Copyright &copy; 2026 All rights reserved. Powered by LollyPopia Team
+        </div>
+
+    </body>
+</html>
